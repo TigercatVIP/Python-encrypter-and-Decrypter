@@ -1,0 +1,114 @@
+def crypted_words(sentence):
+    encription = ""
+
+    for element in sentence:
+        if element in "A":
+            encription = encription + "!"
+        elif element in "a":
+            encription = encription + "#"
+        elif element in "B":
+            encription = encription + "$"
+        elif element in "b":
+            encription = encription + "%"
+        elif element in "C":
+            encription = encription + "&"
+        elif element in "c":
+            encription = encription + "'"
+        elif element in "D":
+            encription = encription + ")"
+        elif element in "d":
+            encription = encription + "*"
+        elif element in "E":
+            encription = encription + "+"
+        elif element in "e":
+            encription = encription + ","
+        elif element in "F":
+            encription = encription + "-"
+        elif element in "f":
+            encription = encription + "."
+        elif element in "G":
+            encription = encription + "/"
+        elif element in "g":
+            encription = encription + "0"
+        elif element in "H":
+            encription = encription + "1"
+        elif element in "h":
+            encription = encription + "2"
+        elif element in "I":
+            encription = encription + "3"
+        elif element in "i":
+            encription = encription + "4"
+        elif element in "J":
+            encription = encription + "5"
+        elif element in "j":
+            encription = encription + "6"
+        elif element in "K":
+            encription = encription + "7"
+        elif element in "k":
+            encription = encription + "8"
+        elif element in "L":
+            encription = encription + "9"
+        elif element in "l":
+            encription = encription + ";"
+        elif element in "M":
+            encription = encription + "<"
+        elif element in "m":
+            encription = encription + "="
+        elif element in "N":
+            encription = encription + ">"
+        elif element in "n":
+            encription = encription + "?"
+        elif element in "O":
+            encription = encription + "@"
+        elif element in "o":
+            encription = encription + "["
+        elif element in "P":
+            encription = encription + "´"
+        elif element in "p":
+            encription = encription + "^"
+        elif element in "Q":
+            encription = encription + "_"
+        elif element in "q":
+            encription = encription + "`"
+        elif element in "R":
+            encription = encription + "{"
+        elif element in "r":
+            encription = encription + "|"
+        elif element in "S":
+            encription = encription + "}"
+        elif element in "s":
+            encription = encription + "~"
+        elif element in "T":
+            encription = encription + "¤"
+        elif element in "t":
+            encription = encription + "¡"
+        elif element in "U":
+            encription = encription + "¥"
+        elif element in "u":
+            encription = encription + "«"
+        elif element in "V":
+            encription = encription + "²"
+        elif element in "v":
+            encription = encription + "¶"
+        elif element in "W":
+            encription = encription + "»"
+        elif element in "w":
+            encription = encription + "½"
+        elif element in "X":
+            encription = encription + "¾"
+        elif element in "x":
+            encription = encription + "¿"
+        elif element in "Y":
+            encription = encription + "×"
+        elif element in "y":
+            encription = encription + "ç"
+        elif element in "Z":
+            encription = encription + "‘"
+        elif element in "z":
+            encription = encription + "€"
+        else:
+            encription = encription + element
+
+    return encription
+
+print(crypted_words(input("What do you ant yo encrypt: ")))

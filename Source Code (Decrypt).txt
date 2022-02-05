@@ -1,0 +1,114 @@
+def derypted_words(sentence):
+    decryption = ""
+
+    for element in sentence:
+        if element in "!":
+            decryption = decryption + "A"
+        elif element in "#":
+            decryption = decryption + "a"
+        elif element in "$":
+            decryption = decryption + "B"
+        elif element in "%":
+            decryption = decryption + "b"
+        elif element in "&":
+            decryption = decryption + "C"
+        elif element in "'":
+            decryption = decryption + "c"
+        elif element in ")":
+            decryption = decryption + "D"
+        elif element in "*":
+            decryption = decryption + "d"
+        elif element in "+":
+            decryption = decryption + "E"
+        elif element in ",":
+            decryption = decryption + "e"
+        elif element in "-":
+            decryption = decryption + "F"
+        elif element in ".":
+            decryption = decryption + "f"
+        elif element in "/":
+            decryption = decryption + "G"
+        elif element in "0":
+            decryption = decryption + "g"
+        elif element in "1":
+            decryption = decryption + "H"
+        elif element in "2":
+            decryption = decryption + "h"
+        elif element in "3":
+            decryption = decryption + "I"
+        elif element in "4":
+            decryption = decryption + "i"
+        elif element in "5":
+            decryption = decryption + "J"
+        elif element in "6":
+            decryption = decryption + "j"
+        elif element in "7":
+            decryption = decryption + "K"
+        elif element in "8":
+            decryption = decryption + "k"
+        elif element in "9":
+            decryption = decryption + "L"
+        elif element in ";":
+            decryption = decryption + "l"
+        elif element in "<":
+            decryption = decryption + "M"
+        elif element in "=":
+            decryption = decryption + "m"
+        elif element in ">":
+            decryption = decryption + "N"
+        elif element in "?":
+            decryption = decryption + "n"
+        elif element in "@":
+            decryption = decryption + "O"
+        elif element in "[":
+            decryption = decryption + "o"
+        elif element in "´":
+            decryption = decryption + "P"
+        elif element in "^":
+            decryption = decryption + "p"
+        elif element in "_":
+            decryption = decryption + "Q"
+        elif element in "`":
+            decryption = decryption + "q"
+        elif element in "{":
+            decryption = decryption + "R"
+        elif element in "|":
+            decryption = decryption + "r"
+        elif element in "}":
+            decryption = decryption + "S"
+        elif element in "~":
+            decryption = decryption + "s"
+        elif element in "¤":
+            decryption = decryption + "T"
+        elif element in "¡":
+            decryption = decryption + "t"
+        elif element in "¥":
+            decryption = decryption + "U"
+        elif element in "«":
+            decryption = decryption + "u"
+        elif element in "²":
+            decryption = decryption + "V"
+        elif element in "¶":
+            decryption = decryption + "v"
+        elif element in "»":
+            decryption = decryption + "W"
+        elif element in "½":
+            decryption = decryption + "w"
+        elif element in "¾":
+            decryption = decryption + "X"
+        elif element in "¿":
+            decryption = decryption + "x"
+        elif element in "×":
+            decryption = decryption + "Y"
+        elif element in "ç":
+            decryption = decryption + "y"
+        elif element in "‘":
+            decryption = decryption + "Z"
+        elif element in "€":
+            decryption = decryption + "z"
+        else:
+            decryption = decryption + element
+
+    return decryption
+
+print(derypted_words(input("What do you ant yo decrypt: ")))
